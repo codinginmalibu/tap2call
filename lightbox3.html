@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+	<!-- JS Files -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	
+	<script type="text/javascript" src="/fancybox/jquery.easing-1.4.pack.js"></script>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+	</head>
+<body>
+Hello World!
+<script>
+
+jQuery(document).ready(function() {
+	$.fancybox(
+		'<h2>Hi!</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis mi eu elit tempor facilisis id et neque</p>',
+		{
+        		'autoDimensions'	: false,
+			'width'         		: 350,
+			'height'        		: 'auto',
+			'transitionIn'		: 'none',
+			'transitionOut'		: 'none'
+		}
+	);
+});
+
+</script>
+</body>
+</html>
+	

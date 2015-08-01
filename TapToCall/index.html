@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<link type="text/css" rel="stylesheet" href="https://products.dandb.com/docs/css/normalize.css" />
+<link type="text/css" rel="stylesheet" href="https://products.dandb.com/docs/css/foundation.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://products.dandb.com/docs/js/detectmobilebrowser.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"  />
+<style type="text/css">
+#TapToCall {
+	text-align: center;
+	background-image: url(images/bg.png);
+	background-repeat: repeat-x;
+	color:white;
+	width: 93%;
+	margin: 4.7% auto;
+}
+
+h1.tap {
+	font-weight: normal;
+	line-height: 1.1;
+}
+
+.box-wrap {
+	padding-top: 5px;
+}
+
+.lead {
+	font-size: 1.5rem;
+	padding-bottom: 10px;
+	border-bottom: 1px solid white; }
+
+.sub {
+	padding-top: 10px;
+	font-size: 1.1rem;
+	margin-bottom: 30px;
+}
+
+a.button img {
+height: 35px;
+padding-right: 5px;
+vertical-align: top;
+}
+
+
+</style>
+</head>
+
+
+
+
+<body>
+
+
+<!-- LINk OUTSIDE LIGHTBOX -->
+<a href="#" data-reveal-id="TapToCall">Link</a>
+<p>test3</p>
+
+
+<!-- Lightbox starts here -->
+<div id="TapToCall" class="reveal-modal" data-reveal>
+
+	<div class="box-wrap">
+	  <h1 class="tap">Questions about your D&B Credit?</h1>
+
+        <a href="tel:800-246-4119" class="button expand icon"><img src="images/phone.png" alt="" />Tap to Call 800-246-4119</a>
+		<div class="lead">a trained Credit Advisor in 30 seconds or less</div>
+
+	  <div class="sub">No automated prompts, no offshore support, no nonsense.</div>
+
+	  <p>During normal business hours.</p>
+	</div>
+
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<!-- Lightbox ends here -->
+
+
+<script type="text/javascript" src="https://products.dandb.com/docs/js/foundation.min.js"></script>
+<script>
+// $(document).foundation();
+
+$(document).ready(function () {
+  if(jQuery.browser.mobile) {
+       	$('#TapToCall').foundation('reveal','open');
+  }
+});
+</script>
+
+
+</body>
+</html>

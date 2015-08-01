@@ -1,0 +1,18 @@
+<script type="text/javascript" src="https://products.dandb.com/docs/detectmobilebrowser.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        if(jQuery.browser.mobile) {
+            $.fancybox({
+                'width': '99%',
+                'height': '84%',
+                'autoScale': true,
+                'transitionIn': 'fade',
+                'transitionOut': 'fade',
+                'type': 'iframe',
+                'href': 'https://products.dandb.com/docs/call-copy.html'
+            });
+        }
+    });
+
+</script>
